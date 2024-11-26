@@ -1,38 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #161616;
+}
+
 .App {
-  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #161616;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2b2b2b;
   color: white;
+  line-height: 50px; /* Centrado vertical */
 }
 
-.App-link {
-  color: #61dafb;
+.education-container{
+  border-top: 1.5px solid #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.skills-container{
+  margin-bottom: 150px;
+  border-top: 1.5px solid #ffffff;
+}
+
+.project-container{
+  border-top: 1.5px solid #ffffff;
+}
+
+.title {
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.subtitle{
+  font-family: "Yellowtail", cursive;
+  font-style: normal;
+  color: #ffffff;
+  text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+}
+
+.me-container{
+  padding-top: 200px;
+}
+
+.me-container img{
+  box-shadow: inset 0 0 10px yellow, 0 0 15px yellow;
+  border: 2px solid #ffffff ;
+}
+
+.btn-neon{
+  color: #ffffff;
+  /* text-shadow: 0 0 2px yellow, 0 0 4px yellow, 0 0 6px yellow, 0 0 8px yellow; */
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  box-shadow: inset 0 0 5px yellow, 0 0 10px yellow;
+}
+
+.btn-neon:hover {
+  background-color: yellow;
+  color: #272727;
+}
+
+.project-container .card {
+  background-color: none;
+}
+
+
+
+.project-item{
+  box-shadow: inset 0 0 10px yellow, 0 0 15px yellow;
+  border: 2px solid #ffffff ;
+  border-radius: 5px;
+}
+
+.project-links{
+  color: #ffffff;
+  font-size: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.project-links:hover{
+  color: #2b2b2b;
+}
+
+.social-links {
+  position: fixed;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+}
+
+.social-links a {
+  color: #ffffff;
+  
+}
+
+.social-links li a i{
+  font-size: 30px;
+}
+
+
+.social-links a:hover {
+  color: yellow;
+}
+
+.acordion{
+  background-color: #272727 !important;
 }
